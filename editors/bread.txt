@@ -1,0 +1,3 @@
+print('emacs was awful')
+print("it's help was unhelpful, nothing like vimtutor")
+print("and it's short cuts were super clunky. No bueno")
