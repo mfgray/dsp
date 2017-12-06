@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> I choose Vim because vimtutor is easy and people swear by vim. Also emacs seemed awkward and clunky with it's commands and command naming.
+>> I choose Vim because vimtutor is easy and people swear by vim. Also emacs seemed awkward and clunky with its commands and command naming.
 
 --
 
