@@ -19,7 +19,28 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> cheat sheet in table below
+
+command | description
+---- | ---
+pwd | print workign directory aka path of the the current working directory
+mkdir *dirname* | make a new directory
+rm -r *dirname* | deleted a directory and its contents in pwd
+touch *filename* | create a file with filename in pwd
+rm *filename* | delete file in pwd
+mv *oldname* *newname* | rename file *oldname* to *newname*
+ls -a | list contents of directory with flag to show hidden files
+cp *filepath/filename* *pathtodesireddirectory* | copy file from directory *filepath* to directory *pathtodesireddirectory*
+cat *filename* | reads contents of file to stdout
+` > ` *command/file* | redirects stdout to the specified command or file
+sort *filename* | sorts lines of file, displays result in stdout
+uniq *filename* | removes adjacent duplicate lines, disp res in stdout
+<code>*firstCommand* &#124; *secondCommand*</code> | takes output of first command and uses it as input of the second command
+
+
+
+
+
 
 ---
 
@@ -34,7 +55,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+>> * `ls`  print visible contents of working directory or specified dir
+* `ls -a`  print visible and invisible contents of working directory
+* `ls -l`  prints ls command results in long format, more info given
+* `ls -lh`  prints ls -l command with unit suffix shown for file sizes
+* `ls -lah`  same as -lh, but includes invisible files
+* `ls -t`  ls with files ordered by last modified time
+* `ls -Glp` enable color in the output (names color coded), list the files in long format, and put a slash at the end of directory names
 
 ---
 
@@ -42,7 +69,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > * ls -m
+* ls -d
+* ls -F
+* ls -u
+* ls -1
 
 ---
 
@@ -50,7 +81,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+> > xargs takes the stdin and executes the provided command with the stdin as parameters.
+* `echo random words and stuff | xargs -n 1`
+* `cat test.txt | xargs -n 1 echo`
+* `find . -name "*.badvirus" | xargs -p rm`
